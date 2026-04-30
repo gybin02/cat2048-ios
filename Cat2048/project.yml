@@ -1,0 +1,32 @@
+name: Cat2048
+options:
+  bundleIdPrefix: com.yourname
+  deploymentTarget:
+    iOS: "16.0"
+  xcodeVersion: "15.0"
+
+settings:
+  base:
+    SWIFT_VERSION: "5.9"
+    IPHONEOS_DEPLOYMENT_TARGET: "16.0"
+    TARGETED_DEVICE_FAMILY: "1"
+    SUPPORTS_MACCATALYST: NO
+
+targets:
+  Cat2048:
+    type: application
+    platform: iOS
+    deploymentTarget: "16.0"
+    sources:
+      - path: .
+        excludes:
+          - "project.yml"
+          - "Cat2048Tests/**"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.yourname.Cat2048
+        INFOPLIST_FILE: Info.plist
+        SWIFT_VERSION: "5.9"
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        SUPPORTED_INTERFACE_ORIENTATIONS: UIInterfaceOrientationPortrait
+        SUPPORTED_INTERFACE_ORIENTATIONS~ipad: "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown"
