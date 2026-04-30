@@ -31,5 +31,3 @@ fastlane/test_output
 .LSOverride
 Thumbs.db
 
-# Kiro internal
-.kiro/
